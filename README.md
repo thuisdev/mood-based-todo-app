@@ -1,4 +1,4 @@
-# 🌤️ MoodDo
+# 🌤️ Mood-based-todo-app
 
 > A full-stack web application that combines real-time weather data with personal mood tracking — built from scratch over 4 weeks as a hands-on introduction to modern web development.
 
