@@ -1,0 +1,28 @@
+<dialog id="mood-selector-dialog" class="mood-selector-dialog-style">
+    <div class="mood">
+        <div class="mood-top">
+            <p class="Feel">How are you feeling?</p>
+            <button 
+                class="style-mood-close-btn"
+                id="mood-close-btn"
+                type="button">
+                X
+            </button>
+        </div>
+
+        <div class="mood-mid">
+            <div class="mood-btn">
+                <button class="sad" type="button" id="mood-sad-btn">😢</button>
+                <button class="neutral" type="button" id="mood-neutral-btn">😐</button>
+                <button class="happy" type="button" id="mood-happy-btn">😊</button>
+            </div>
+
+            <input id="mood-slider" class="selector" type="range" min="0" max="2" step="1" value="1">
+            <p id="mood-label"></p>
+        </div>
+    </div>
+</dialog>
+
+
+<div id="success-message" class="success-message"></div>
+<script src="Scripts/index.js"></script>

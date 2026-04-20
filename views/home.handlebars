@@ -1,0 +1,52 @@
+
+    {{> header}}
+
+    <main>
+        <div class="left-side">
+            <div class="left-top">
+                <div>
+                    <h1>Ready for Today?</h1>
+                    <p id="task-count-text">You have 0 tasks planned for today</p>
+                </div>
+                <div class="left-buttons">
+                    <button class="add-task-open-btn-style" id="add-task-open-btn">+ Add Task</button>
+
+                    <button class="btn-complete-all" id="complete-all-btn">Complete All</button>
+                    <button class="btn-show-completed" id="show-completed-btn">Show Completed</button>
+                </div>
+            </div>
+
+            <div 
+                class="task-lists" 
+                id="task-list">
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="right-side">
+                <h2>Suggested tasks</h2>
+                <div id="suggested-task-list"></div>
+            </div>
+
+            <div class="bottom-right-side hidden" id="completed-section">
+                <h2>Completed tasks</h2>
+                <div id="completed-task-list"></div>
+            </div>
+        </div>
+        </main>
+
+{{> footer}}
+
+
+<!-- Weather Dialog -->
+{{> weatherDialog}}
+
+
+<!-- Add Task Dialog -->
+{{> addTaskDialog}}
+
+
+<!-- Login Dialog -->
+{{> loginDialog}}
+
+<!-- Mood Selector Dialog -->
+{{> moodSelectorDialog}}

@@ -1,0 +1,160 @@
+/* ===== Weather Dialog ===== */
+.style-weather-dialog {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.style-weather-card {
+    background-color: #151525;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.style-weather-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.style-weather-close-btn {
+    color: gray;
+    background: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.style-weather-card h1 {
+    font-size: 25px;
+}
+
+.style-weather-main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.style-weather-icon {
+    font-size: 40px;
+    margin: 0;
+}
+
+.style-degree {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.style-weather-art {
+    color: rgb(73, 70, 70);
+    font-size: 17px;
+}
+
+.style-humidity {
+    color: rgb(73, 70, 70);
+    font-size: 17px;
+}
+
+/* ===== Login / Profile Dialog ===== */
+.login-dialog-style {
+    background-color: #1e1e2e;
+    color: white;
+    margin: 0;
+}
+
+.login {
+    background-color: #151525;
+    padding: 28px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.profile-h1 {
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px lawngreen;
+    font-size: 30px;
+}
+
+.login-top {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.style-profile-close-btn {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.login-x {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login input {
+    background-color: rgb(33, 88, 88);
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+
+.login-btn {
+    text-align: center;
+    color: black;
+    background-color: lawngreen;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    min-height: 50px;
+}
+
+.logout-btn {
+    text-align: center;
+    color: white;
+    background: transparent;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px;
+    border-radius: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.profile-details {
+    color: gray;
+    border: none;
+    text-align: center;
+    margin: 12px;
+    font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .login {
+        padding: 22px 18px;
+    }
+}

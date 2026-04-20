@@ -1,0 +1,81 @@
+.mood-selector-dialog-style {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.mood {
+    background-color: #151525;
+    margin: auto;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.mood-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.style-mood-close-btn {
+    color: gray;
+    background: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.mood-mid {
+    color: gray;
+}
+
+.mood-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sad,
+.neutral,
+.happy {
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.selector {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: lawngreen;
+    margin: 20px 0 15px 0;
+    outline: none;
+}
+
+.selector::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    border: 2px solid lawngreen;
+}
+
+.Feel {
+    font-size: 22px;
+    margin: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .mood {
+        padding: 22px 18px;
+    }
+}

@@ -1,0 +1,106 @@
+.right-side h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.bottom-right-side h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: lawngreen;
+}
+
+.suggested-card {
+    background-color: #2a2a3e;
+    border-radius: 18px;
+    padding: 20px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.suggested-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.suggested-title {
+    color: orange;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.suggested-mins {
+    color: gray;
+    font-size: 15px;
+}
+
+.suggested-time {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.pm {
+    color: gray;
+    font-size: 14px;
+}
+
+.suggested-right {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.suggested-icon {
+    font-size: 34px;
+}
+
+.based {
+    color: gray;
+    font-size: 13px;
+}
+
+.based-on {
+    color: orange;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.suggested-task-check-btn {
+    color: lawngreen;
+    border: 2px solid lawngreen;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.completed-suggested .suggested-task-check-btn {
+    color: black;
+    background-color: lawngreen;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .suggested-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 18px 16px;
+    }
+
+    .suggested-right {
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+    }
+}

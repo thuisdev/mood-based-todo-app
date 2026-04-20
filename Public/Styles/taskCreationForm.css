@@ -1,0 +1,95 @@
+dialog {
+    background-color: #151525;
+    border: none;
+    border-radius: 25px;
+    padding: 0;
+    color: white;
+    width: min(620px, 92vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.create {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.create input {
+    background-color: rgb(33, 88, 88);
+    padding: 16px;
+    border-radius: 12px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: gray;
+}
+
+.create-x {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add {
+    font-size: 30px;
+}
+
+.style-add-task-close-btn {
+    color: gray;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add-task-create-btn {
+    text-align: center;
+    color: black;
+    background-color: lawngreen;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    min-height: 50px;
+}
+
+/* Validation */
+.input-error {
+    color: red;
+    font-size: 13px;
+    margin-top: -4px;
+    margin-bottom: 2px;
+    min-height: 16px;
+}
+
+.input-invalid {
+    border: 1px solid red !important;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    dialog {
+        width: 94vw;
+    }
+
+    .create {
+        padding: 22px 18px;
+    }
+}
