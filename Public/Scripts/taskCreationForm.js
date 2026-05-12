@@ -1,6 +1,4 @@
-// =====================
 // DOM SELECTORS
-// =====================
 const taskDialog = document.querySelector("#task-dialog");
 const addTaskOpenBtn = document.querySelector("#add-task-open-btn");
 const addTaskCancelBtn = document.querySelector("#add-task-cancel-btn");
@@ -13,9 +11,7 @@ const taskTimeError = document.querySelector("#task-time-error");
 const taskCreateBtn = document.querySelector("#task-create-btn");
 const taskDialogTitle = document.querySelector("#task-dialog-title");
 
-// =====================
 // OPEN / CANCEL DIALOG
-// =====================
 addTaskOpenBtn.addEventListener("click", () => {
     editingTaskIndex = null;
     taskDialogTitle.textContent = "Add a new task";
@@ -38,9 +34,7 @@ addTaskCancelBtn.addEventListener("click", () => {
     taskDialog.close();
 });
 
-// =====================
 // CREATE / SAVE TASK
-// =====================
 taskCreateBtn.addEventListener("click", () => {
     const name = taskNameInput.value;
     const duration = taskDurationInput.value;
@@ -101,9 +95,7 @@ taskCreateBtn.addEventListener("click", () => {
     clearTaskErrors();
 });
 
-// =====================
 // CLEAR VALIDATION ERRORS
-// =====================
 const clearTaskErrors = () => {
     taskNameError.textContent = "";
     taskDurationError.textContent = "";
