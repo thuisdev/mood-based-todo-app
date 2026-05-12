@@ -1,14 +1,10 @@
-// =====================
 // DOM SELECTORS
-// =====================
 const taskList = document.querySelector("#task-list");
 const completedTaskList = document.getElementById("completed-task-list");
 const showCompletedBtn = document.getElementById("show-completed-btn");
 const completedSection = document.getElementById("completed-section");
 
-// =====================
 // DUMMY TASKS (first load)
-// =====================
 const dummyTasks = [
     { name: "Read a book", duration: 45, time: "12:43 PM", completed: false },
     { name: "Workout", duration: 30, time: "15:00 PM", completed: false },
@@ -19,9 +15,7 @@ if (tasks.length === 0) {
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// =====================
 // RENDER SINGLE TASK
-// =====================
 const renderTask = (task, index) => {
     const taskCard = document.createElement("div");
     taskCard.className = task.completed ? "task-card completed-task" : "task-card";
@@ -73,9 +67,7 @@ const renderTask = (task, index) => {
     return taskCard;
 }
 
-// =====================
 // LOAD ALL TASKS
-// =====================
 const loadTasks = () => {
     taskList.innerHTML = "";
     completedTaskList.innerHTML = "";
@@ -98,9 +90,7 @@ const loadTasks = () => {
 
 loadTasks();
 
-// =====================
 // SHOW / HIDE COMPLETED
-// =====================
 showCompletedBtn.addEventListener("click", () => {
     completedSection.classList.toggle("hidden");
 

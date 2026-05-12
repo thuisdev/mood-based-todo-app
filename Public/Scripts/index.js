@@ -1,16 +1,11 @@
-// =====================
 // GLOBAL SHARED STATE
-// =====================
-
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let editingTaskIndex = null;
 let currentCondText = "";
 let currentIconURL = "";
 
-// =====================
 // SUCCESS MESSAGE
-// =====================
 const successMessage = document.querySelector("#success-message");
 
 const showSuccessMessage = (message) => {
@@ -22,9 +17,7 @@ const showSuccessMessage = (message) => {
     }, 2500);
 }
 
-// =====================
 // WEATHER
-// =====================
 const weatherOpenBtn = document.getElementById("weather-open-btn");
 const weatherDialog = document.getElementById("weather-dialog");
 const weatherCloseBtn = document.getElementById("weather-close-btn");
@@ -65,12 +58,10 @@ navigator.geolocation.getCurrentPosition((position) => {
             loadSuggestedTasks(condText);
         });
 }, (error) => {
-    console.log("Standort konnte nicht geladen werden:", error.message);
+    console.log("Could not load Location:", error.message);
 });
 
-// =====================
 // COMPLETE ALL BUTTON
-// =====================
 const completeAllBtn = document.querySelector("#complete-all-btn");
 
 completeAllBtn.addEventListener("click", () => {

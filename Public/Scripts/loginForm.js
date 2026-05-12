@@ -1,6 +1,4 @@
-// =====================
 // DOM SELECTORS
-// =====================
 const guestName = document.querySelector("#guest-name");
 const profileLogoutBtn = document.querySelector("#profile-logout-btn");
 const profileOpenBtn = document.querySelector("#profile-open-btn");
@@ -14,18 +12,14 @@ const nameError = document.querySelector("#name-error");
 const emailError = document.querySelector("#email-error");
 const passwordError = document.querySelector("#password-error");
 
-// =====================
 // INITIAL STATE: show saved user name
-// =====================
 const savedUser = JSON.parse(localStorage.getItem("user"));
 
 if (savedUser) {
     guestName.textContent = savedUser.name;
 }
 
-// =====================
 // OPEN PROFILE DIALOG
-// =====================
 profileOpenBtn.addEventListener("click", () => {
     const savedUser = JSON.parse(localStorage.getItem("user"));
 
@@ -49,9 +43,7 @@ profileOpenBtn.addEventListener("click", () => {
 
 profileCloseBtn.addEventListener("click", () => loginDialog.close());
 
-// =====================
 // LOGOUT
-// =====================
 profileLogoutBtn.addEventListener("click", () => {
     localStorage.removeItem("user");
     guestName.textContent = "Guest.";
@@ -64,9 +56,7 @@ profileLogoutBtn.addEventListener("click", () => {
     showSuccessMessage("Logout successful!");
 });
 
-// =====================
 // LOGIN / SAVE CHANGES
-// =====================
 profileLoginBtn.addEventListener("click", () => {
     const name = profileNameInput.value.trim();
     const email = profileEmailInput.value.trim();
@@ -117,9 +107,7 @@ profileLoginBtn.addEventListener("click", () => {
     loginDialog.close();
 });
 
-// =====================
 // CLEAR VALIDATION ERRORS
-// =====================
 const clearLoginErrors = () => {
     nameError.textContent = "";
     emailError.textContent = "";

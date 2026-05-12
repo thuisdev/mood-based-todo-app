@@ -1,11 +1,7 @@
-// =====================
 // DOM SELECTORS
-// =====================
 const suggestedTaskList = document.querySelector("#suggested-task-list");
 
-// =====================
 // SUGGESTED TASK DATA
-// =====================
 const suggestedWeatherTasks = {
     cloudy: {
         title: "Meditation",
@@ -60,16 +56,13 @@ const suggestedMoodTasks = [
     },
 ];
 
-// =====================
 // RENDER SINGLE SUGGESTED TASK
-// =====================
 const renderSuggestedTask = (task) => {
     const suggestedCard = document.createElement("div");
     suggestedCard.className = task.completed
         ? "suggested-card completed-suggested"
         : "suggested-card";
 
-    // Mood tasks show emoji icon; weather tasks show the weather API icon
     const iconHTML = task.basedOn === "Mood"
         ? moods[currentMoodIndex]
         : `<img src="${currentIconURL}" style="width:28px;">`;
@@ -97,9 +90,7 @@ const renderSuggestedTask = (task) => {
     suggestedTaskList.appendChild(suggestedCard);
 }
 
-// =====================
 // LOAD SUGGESTED TASKS
-// =====================
 const loadSuggestedMoodTasks = () => {
     renderSuggestedTask(suggestedMoodTasks[currentMoodIndex]);
 }
