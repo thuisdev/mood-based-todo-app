@@ -1,14 +1,18 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
 const dotenv = require('dotenv');
+const path = require('path');
+
 dotenv.config();
 
 const app = express();
 
-app.use(express.static("public"));
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'handlebars');
+
+app.use(express.static('public'));
 
 app.engine('handlebars', handlebars.engine());
-app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -21,7 +25,5 @@ app.get('/api/weather', async (req, res) => {
     const data = await response.json();
     res.json(data);
 });
-
-// app.listen(process.env.PORT, console.log("Server is running"));
 
 module.exports = app;
