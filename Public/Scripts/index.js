@@ -1,5 +1,3 @@
-// GLOBAL SHARED STATE
-
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 let editingTaskIndex = null;
 let currentCondText = "";
