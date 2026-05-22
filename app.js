@@ -22,4 +22,6 @@ app.get('/api/weather', async (req, res) => {
     res.json(data);
 });
 
-app.listen(process.env.PORT, console.log("Server is running"));
+// app.listen(process.env.PORT, console.log("Server is running"));
+
+module.exports = app;
