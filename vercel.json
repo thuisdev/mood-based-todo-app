@@ -12,16 +12,12 @@
   ],
   "routes": [
     {
-      "src": "/styles/(.*)",
-      "dest": "/public/styles/$1"
-    },
-    {
-      "src": "/scripts/(.*)",
-      "dest": "/public/scripts/$1"
-    },
-    {
-      "src": "/(.*)",
+      "src": "/((?!.*\\.[a-zA-Z0-9]).*)",
       "dest": "/app.js"
+    },
+    {
+      "src": "/(.+\\.[a-zA-Z0-9]+)$",
+      "dest": "/public/$1"
     }
   ]
 }
