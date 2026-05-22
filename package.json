@@ -4,6 +4,7 @@
   "description": "> A full-stack web application that combines real-time weather data with personal mood tracking — built from scratch over 4 weeks as a hands-on introduction to modern web development.",
   "main": "app.js",
   "scripts": {
+    "script": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "express-handlebars": "^6.0.7",
+    "minimatch": "^10.2.5",
     "path": "^0.12.7"
   },
   "devDependencies": {
