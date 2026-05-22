@@ -1,20 +1,23 @@
 {
   "name": "mood-based-todo-app",
   "version": "1.0.0",
-  "description": "> A full-stack web application that combines real-time weather data with personal mood tracking — built from scratch over 4 weeks as a hands-on introduction to modern web development.",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
+
+  "engines": {
+    "node": "20.x"
+  },
+
+  "scripts": {
+    "start": "node app.js"
+  },
+
   "dependencies": {
     "dotenv": "^17.4.1",
-    "express": "^5.2.1",
+    "express": "^4.22.2",
     "express-handlebars": "^6.0.7"
   },
+
   "devDependencies": {
     "nodemon": "^3.1.14"
   }
