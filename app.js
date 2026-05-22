@@ -5,7 +5,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(express.static("Public"));
+app.use(express.static("public"));
 
 app.engine('handlebars', handlebars.engine());
 app.set('view engine', 'handlebars');
